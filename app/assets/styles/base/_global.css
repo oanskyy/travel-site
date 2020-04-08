@@ -7,3 +7,9 @@ img {
   max-width: 100%; 
   height: auto;
 }
+
+* { 
+
+  box-sizing: border-box; 
+  /* managing our WIDTH VALUES got easier, we set that prop once in the global file and we can forget about it. */
+}
