@@ -1,8 +1,10 @@
 import '../styles/styles.css'
 import 'lazysizes'
+import RevealOnScroll from './modules/RevealOnScroll'
 import MobileMenu from './modules/MobileMenu' 
 import StickyHeader from './modules/StickyHeader'
 
+let revealOnScroll = new RevealOnScroll();
 new StickyHeader();
 new MobileMenu();
 let modal
