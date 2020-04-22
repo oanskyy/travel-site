@@ -4,7 +4,8 @@ import RevealOnScroll from './modules/RevealOnScroll'
 import MobileMenu from './modules/MobileMenu' 
 import StickyHeader from './modules/StickyHeader'
 
-let revealOnScroll = new RevealOnScroll();
+new RevealOnScroll(document.querySelectorAll('.feature-item'), 75);
+new RevealOnScroll(document.querySelectorAll('.testimonial'), 60);
 new StickyHeader();
 new MobileMenu();
 let modal
