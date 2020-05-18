@@ -10,13 +10,14 @@ class ClientArea {
   }
 
   events() { 
-    this.form.addEventListener('submit', e => { 
+    this.form.addEventListener("submit", e => { 
       e.preventDefault()
       this.sendRequest()
     })
+  }
 
   sendRequest() { 
-    //this is where we communicate with our cloud function 
+    
     Axios.post('https://eager-hugle-b8e62c.netlify.app/.netlify/functions/secret-area', {password: this.field.value}).then(response => { 
       this.form.remove()
       this.contentArea.innerHTML = response.data
@@ -26,10 +27,9 @@ class ClientArea {
       this.field.focus()
     })
   }
-  }
+  
 
-  injectHTML() { 
-    document.body.insertAdjacentHTML('beforeend', ` 
+  injectHTML() { document.body.insertAdjacentHTML('beforeend', ` 
       <div class="client-area">
         <div class="wrapper wrapper--medium">
           <h2 class="section-title section-title--blue">Secret Client Area</h2>
@@ -40,8 +40,9 @@ class ClientArea {
           <div class="client-area__content-area"></div>
         </div>
       </div>
-    `)
+    `) 
   }
+  
 }
 
 export default ClientArea
