@@ -1,6 +1,7 @@
 # travel-site-clearview 
 
 A mobile-first responsive website using modern skills, tools, and best-practices.
+<br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/2e007a05-4425-44ee-9634-2f96a4c15ac6/deploy-status)](https://app.netlify.com/sites/travel-site-clearview-21052020/deploys)
 
 # tech stack 
